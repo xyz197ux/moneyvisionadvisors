@@ -224,7 +224,7 @@ nav .logo {
   left: 0;
   width: 51%;
   height: 100%;
-  background-color: var(--white);
+  background-color: var(--light-blue);
   z-index: -1;
   transform: translateX(-100%);
   transition: all 0.4s;
