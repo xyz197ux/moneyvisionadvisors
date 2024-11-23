@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 :root {
   --white: #fff;
   --black: #000;
@@ -10,6 +10,7 @@
   --light-grey: #ccc;
   --dark-grey: #222831;
   --pink: #e9204f;
+  --Dark-Blue: hsl(233, 26%, 24%);
 }
 
 * {
@@ -23,7 +24,8 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 p {
@@ -319,13 +321,13 @@ nav .logo {
 
 .heading h2 {
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: 600;
   margin-top: 4rem;
 }
 
 .heading p {
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--black);
 }
 
@@ -394,9 +396,9 @@ nav .logo {
   grid-column: 1/3;
 }
 
-.image img {
+/* .image img {
   filter: grayscale(80%);
-}
+} */
 
 .image {
   position: relative;
@@ -404,7 +406,7 @@ nav .logo {
   cursor: pointer;
 }
 
-.image::before {
+/* .image::before {
   position: absolute;
   content: "";
   left: 0;
@@ -413,19 +415,19 @@ nav .logo {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
-}
+} */
 
 .image-text {
   position: absolute;
-  left: 1rem;
+  left: 6rem;
   bottom: 1rem;
-  color: var(--white);
+  color: var(--black);
   z-index: 11;
 }
 
-.image:hover img {
+/* .image:hover img {
   filter: grayscale(0);
-}
+} */
 
 /* About text */
 .about-text {
@@ -445,7 +447,7 @@ nav .logo {
 }
 
 .about-text p {
-  color: #777;
+  color:var(--black);
 }
 
 /* Blog section */
@@ -456,6 +458,7 @@ nav .logo {
 }
 
 .blog {
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   row-gap: 4rem;
@@ -479,8 +482,9 @@ nav .logo {
 }
 
 .blog .blog-text {
+  
   position: absolute;
-  bottom: 1rem;
+  bottom: -1rem;
   color: var(--white);
   z-index: 11;
   transform: translateY(2.5rem);
@@ -501,6 +505,66 @@ nav .logo {
   /* transform: rotate(20deg); */
 }
 
+
+
+
+/* Our Team */
+/* Our Team */
+/* Our Team */
+/* Our Team */
+/* Our Team */
+#team  h2{
+  text-align: left;
+  color:var(--Dark-Blue);
+}
+
+.team {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  row-gap: 10rem;
+  column-gap: 6rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+/* .blog > div:nth-child(2) {
+  margin: 0 1rem;
+} */
+
+.team-item {
+  text-align: center;
+  position: relative;
+  padding: 1rem  1rem;
+  /* overflow: hidden; */
+}
+
+.team i {
+  font-size: 1.4rem;
+  padding-top: 1.5rem;
+}
+
+.team .team-text {
+  width: 100%;
+  position: absolute;
+  top: 30rem;
+  
+  
+  color:var(--dark-grey);
+  
+}
+
+.team-item img {
+  width: 100%;
+ 
+}
+
+
+
+
+
+
+
+
 /* Contact us */
 /* Contact us */
 /* Contact us */
@@ -515,7 +579,7 @@ nav .logo {
   align-items: center;
 }
 .contact i {
-  color: var(--white);
+  color: var(--light-grey);
   font-size: 2.5rem;
   border: 2px solid var(--pink);
   padding: 1rem;
@@ -535,7 +599,7 @@ nav .logo {
 .contact h2 {
   font-size: 5rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--light-blue);
 }
 
 /* Footer section */
