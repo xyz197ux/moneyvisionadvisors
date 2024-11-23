@@ -217,7 +217,19 @@ nav .logo {
   overflow: hidden;
 }
 
-.btn::before {
+.intro .btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 51%;
+  height: 100%;
+  background-color: var(--white);
+  z-index: -1;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+}
+.contact .btn::before {
   position: absolute;
   content: "";
   top: 0;
